@@ -1,0 +1,124 @@
+@import './varibales.scss';
+@import './loading.scss';
+@import './card.scss';
+@import './filters.scss';
+@import './tooltip.scss';
+
+.board{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: $color-light-blue;
+
+}
+.form{
+    margin-top: 200px;
+    background-color: $color-light-gray;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 200px;
+    font-size: $medium-font;
+    border-radius: 2px;
+    min-width: 300px;
+    .form-div-header{
+        display: flex;
+        justify-content: center;
+    }
+    .form-header{
+        font-size: $medium-font;
+        margin: 0;
+        padding: 20px;
+        color: $color-blue;
+    }
+    .form-input{
+        border: 1px solid $color-light-blue;
+        border-radius: 2px;
+        padding: 6px;
+        
+    }
+    .form-input-error{
+        border: 1px solid red;
+        
+        
+    }
+    .form-input-error{
+        border: 1px solid red;
+    }
+    .form-input:focus{
+        outline: none;
+    }
+    .form-error p{
+        font-size: 0.9rem;
+        margin-top: 10px;
+        color: red;
+        font-weight: bold;
+    }
+    .form-error{
+         display: flex;
+         justify-content: center;
+    }
+    .form-btn{
+        margin-top: 20px;
+        border: none;
+        background-color: $color-blue;
+        padding: 7px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .form-btn:focus{
+        outline: none;
+    }
+    .form-btn:hover{
+        background-color: darken($color: $color-blue, $amount: 10)
+    }
+}
+
+
+
+.navbar{
+    background-color: $color-dark-blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+
+    .navbar-logout{
+        cursor: pointer;
+    }
+}
+.navbar ul li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+     
+
+}
+ 
+.hello-text{
+    display: flex;
+    justify-content: center;
+}
+
+  @media only screen and (max-width: 600px) {
+    .grid { 
+        grid-template-columns: auto;    
+      }
+  }
+  @media (min-width: 768px) and (max-width: 1024px){ 
+    .grid { 
+        grid-template-columns: auto auto;   
+      }
+} 
+
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px) and (max-width: 767px) { 
+    .grid {
+        grid-template-columns: auto auto;  
+      }
+} 
+
+ 

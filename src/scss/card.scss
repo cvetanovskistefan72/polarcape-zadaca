@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+     
+    padding: 30px;
+  }
+.card {
+    width: 200px;
+    margin: 30px;
+     
+    .card-button{
+      width: 100%;
+      background-color: $color-blue;
+      padding: 10px;
+      border-radius: 0;
+      border: none;
+      color: white;
+      font-weight: bold;
+      vertical-align: bottom;
+    }
+    .card-button:hover{
+        background-color: darken($color: $color-blue, $amount: 10)
+    }
+    .card-button:focus{
+        outline: none;
+    }
+     
+     
+  }

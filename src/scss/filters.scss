@@ -1,0 +1,104 @@
+.search-filters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    padding: 50px;
+    background-color: $color-light-gray;
+    .search-filters-inputs1{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .search-filters-inputs1 input:focus{
+        outline: none;
+    }
+    .search-filters-inputs1 button:focus{
+        outline: none;
+    }
+    .search-filters-inputs1 input {
+        width: 90%;
+        padding: 10px;
+        border: none;
+        color: black;
+       
+    }
+    .search-filters-inputs1 button {
+        padding: 10px;
+        border: none;
+        color: white;
+        background-color: $color-green;
+        font-weight: bold;
+         
+       
+    }
+    .search-filters-inputs1 button:hover{
+        cursor: pointer;
+        background-color:  darken($color: $color-green, $amount: 10);
+       
+    }
+    .search-filters-inputs2{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .search-filters-inputs2 select {
+        
+        width: 200px;
+        padding: 10px 10px 10px 10px;
+        border: none;
+        margin: 5px;
+       
+    }
+    .search-filters-inputs2 select:focus{
+        outline: none;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .search-filters-inputs1 input{
+        width: 100%;
+    }
+    .search-filters-inputs1{
+        width: 100%;
+        flex-direction: column;
+       
+    }
+    .search-filters-inputs2{
+         
+        flex-direction: column;
+       
+    }
+}
+    @media (min-width: 481px) and (max-width: 767px){
+    .search-filters-inputs1 input{
+        width: 100%;
+    }
+    .search-filters-inputs1 button{
+        margin-top: 5px;
+    }
+    .search-filters-inputs1{
+       
+        flex-direction: column;
+       
+    }
+    .search-filters-inputs2{
+      
+        flex-direction: column;
+       
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .search-filters-inputs2{
+        
+        flex-direction: column;
+       
+    }
+}
